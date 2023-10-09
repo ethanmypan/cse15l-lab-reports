@@ -1,6 +1,10 @@
 # Labrotory 1
 
-## Cat command
+## What will we cover?
+
+- cd command
+- ls command
+- cat command
 
 ![Image](catNoArg.png)
 
