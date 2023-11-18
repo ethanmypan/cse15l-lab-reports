@@ -71,4 +71,32 @@ static void reverseInPlace(int[] arr) {
 The fix addresses the issue of poorly reversing the order of the array. In the original code for our example, the first element of the reversed array was 2, the next element was also 2. The reason this happend is because what the original code did was set the 0th element (1) to 1st element of the array (2), now the 0th element is (2). Then it set the 1st element to the 0th element and since the 0th element is (2), the array would be filled with {2, 2}. What my corrected immplementation does, is it sets a int j to keep track of the end of the array, then it itterates through half of the array,  then sets the element i to a temp int, then sets the element in array[i] to the element in array[j], then it sets the element in array[j] to the temp int, and then decrement j by 1. What this better implementation does, it will get an array, for out example {2, 2}, set j to 1, ittereate through half the length of the array, set int temp to 1, then set the element of the array[0](1) = array[1](2), then set arr[1] = (1). This implementation, will return the array {2, 1}.
 
 # Part 2
-## Grep command-line options
+## Find command-line options
+## To understand what the Find command-line options are/do I used the man find command
+
+
+## find "path" -ls 
+## find "path" -ls with directory as an argument
+```ruby
+(base) ethanmypan@Ethans-MacBook-Air-4 technical % find /Users/ethanmypan/docsearch/technical -ls
+pan/docsearch/technical/911report/chapter-13.3.txt
+18536376      520 -rwxr-xr-x    1 ethanmypan       staff              264360 Oct 31 12:39 /Users/ethanmypan/docsearch/technical/911report/chapter-3.txt
+18536375      160 -rwxr-xr-x    1 ethanmypan       staff               79803 Oct 31 12:39 /Users/ethanmypan/docsearch/technical/911report/chapter-2.txt
+18536366      232 -rwxr-xr-x    1 ethanmypan       staff              118656 Oct 31 12:39 /Users/ethanmypan/docsearch/technical/911report/chapter-1.txt
+```
+## find "path" -ls with file as an argument
+```ruby
+(base) ethanmypan@Ethans-MacBook-Air-4 biomed % find /Users/ethanmypan/docsearch/technical/biomed/1471-2202-3-20.txt -ls
+18536659       72 -rwxr-xr-x    1 ethanmypan       staff               36617 Oct 31 12:39 /Users/ethanmypan/docsearch/technical/biomed/1471-2202-3-20.txt
+```
+
+
+find /Users/ethanmypan/docsearch -size -100k
+
+/Users/ethanmypan/docsearch/technical/biomed/1471-2202-3-20.txt 
+
+
+```ruby
+
+```
+
