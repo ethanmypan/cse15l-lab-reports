@@ -77,6 +77,7 @@ The fix addresses the issue of poorly reversing the order of the array. In the o
 
 ## find "path" -ls 
 ## find "path" -ls with directory as an argument
+- Shortend the output since it was multiple pages long.
 ```ruby
 (base) ethanmypan@Ethans-MacBook-Air-4 technical % find /Users/ethanmypan/docsearch/technical -ls
 pan/docsearch/technical/911report/chapter-13.3.txt
@@ -84,17 +85,41 @@ pan/docsearch/technical/911report/chapter-13.3.txt
 18536375      160 -rwxr-xr-x    1 ethanmypan       staff               79803 Oct 31 12:39 /Users/ethanmypan/docsearch/technical/911report/chapter-2.txt
 18536366      232 -rwxr-xr-x    1 ethanmypan       staff              118656 Oct 31 12:39 /Users/ethanmypan/docsearch/technical/911report/chapter-1.txt
 ```
+
 ## find "path" -ls with file as an argument
 ```ruby
 (base) ethanmypan@Ethans-MacBook-Air-4 biomed % find /Users/ethanmypan/docsearch/technical/biomed/1471-2202-3-20.txt -ls
 18536659       72 -rwxr-xr-x    1 ethanmypan       staff               36617 Oct 31 12:39 /Users/ethanmypan/docsearch/technical/biomed/1471-2202-3-20.txt
 ```
+## find "path" -size - "size to filter by"
+- Shortend the output since it was multiple pages long.
+
+## find /Users/ethanmypan/docsearch/technical -size -1k 
+```ruby
+(base) ethanmypan@Ethans-MacBook-Air-4 technical % find /Users/ethanmypan/docsearch/technical -size -1k 
+/Users/ethanmypan/docsearch/technical
+/Users/ethanmypan/docsearch/technical/government
+/Users/ethanmypan/docsearch/technical/government/About_LSC
+/Users/ethanmypan/docsearch/technical/government/Env_Prot_Agen
+/Users/ethanmypan/docsearch/technical/government/Alcohol_Problems
+/Users/ethanmypan/docsearch/technical/government/Post_Rate_Comm
+/Users/ethanmypan/docsearch/technical/plos/pmed.0020191.txt
+/Users/ethanmypan/docsearch/technical/plos/pmed.0020226.txt
+/Users/ethanmypan/docsearch/technical/911report
+```
+## find /Users/ethanmypan/docsearch/technical/plos/pmed.0020226.txt -size -1k
+```ruby
+(base) ethanmypan@Ethans-MacBook-Air-4 technical % find /Users/ethanmypan/docsearch/technical/plos/pmed.0020226.txt -size -1k
+/Users/ethanmypan/docsearch/technical/plos/pmed.0020226.txt
+```
 
 
-find /Users/ethanmypan/docsearch -size -100k
+find /Users/ethanmypan/docsearch/technical/911report/chapter-1.txt -size -100k
 
 /Users/ethanmypan/docsearch/technical/biomed/1471-2202-3-20.txt 
+/Users/ethanmypan/docsearch/technical/911report/chapter-1.txt
 
+find /path/to/search -name "*.txt" -delete
 
 ```ruby
 
