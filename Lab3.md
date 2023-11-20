@@ -71,13 +71,22 @@ static void reverseInPlace(int[] arr) {
 The fix addresses the issue of poorly reversing the order of the array. In the original code for our example, the first element of the reversed array was 2, the next element was also 2. The reason this happened is because what the original code did was set the 0th element (1) to 1st element of the array (2), now the 0th element is (2). Then it set the 1st element to the 0th element and since the 0th element is (2), the array would be filled with {2, 2}. What my corrected implementation does, is it sets a int j to keep track of the end of the array, then it iterates through half of the array,  then sets the element i to a temp int, then sets the element in array[i] to the element in array[j], then it sets the element in array[j] to the temp int, and then decrement j by 1. What this better implementation does, it will get an array, for out example {2, 2}, set j to 1, iterate through half the length of the array, set int temp to 1, then set the element of the array[0](1) = array[1](2), then set arr[1] = (1). This implementation will return the array {2, 1}.
 
 # Part 2
-## Find command-line options
-To understand what the find command-line options are/do I used the man find command in the terminal. I also asked chat gpt how to use the find - "command" (I filled in "command" with the command I was learning) in the terminal.
+## find command-line options
+To understand what the find command-line options are/do I used the man find command in the terminal.
+## Academic Integrity 
+For find -size, I didn't know how to use it fully so I asked chat gpt how to use find -size with a directory as an argument tldr. It returned this "find /path/to/directory -type f -size +10M -size -50M", once it returned this I had a better understanding that you have to use -size -(size of file to filter by).
 
+## find command-line options I chose
+- find -ls
+- find -size
+- find -delete
+- find -name
 
 # find "path" -ls 
 ## find "path" -ls with directory as an argument
+```ruby
 find /Users/ethanmypan/docsearch/technical -ls
+```
 - Shortend the output since it was multiple pages long.
 ```ruby
 (base) ethanmypan@Ethans-MacBook-Air-4 technical % find /Users/ethanmypan/docsearch/technical -ls
@@ -88,7 +97,9 @@ pan/docsearch/technical/911report/chapter-13.3.txt
 ```
 Explanation: find /Users/ethanmypan/docsearch/technical -ls, this command searches files in the provided path. It also provides useful information on each file, this is important since it can help display the owners of the file, file size, and other important information.
 ## find "path" -ls with file as an argument
+```ruby
 find /Users/ethanmypan/docsearch/technical/biomed/1471-2202-3-20.txt -ls
+```
 ```ruby
 (base) ethanmypan@Ethans-MacBook-Air-4 biomed % find /Users/ethanmypan/docsearch/technical/biomed/1471-2202-3-20.txt -ls
 18536659       72 -rwxr-xr-x    1 ethanmypan       staff               36617 Oct 31 12:39 /Users/ethanmypan/docsearch/technical/biomed/1471-2202-3-20.txt
@@ -97,7 +108,9 @@ Explanation: find /Users/ethanmypan/docsearch/technical/biomed/1471-2202-3-20.tx
 # find "path" -size -"size to filter by"
 - Shortend the output since it was multiple pages long.
 ## find "path" -size with directory as argument
-find /Users/ethanmypan/docsearch/technical -size -1k 
+```ruby
+find /Users/ethanmypan/docsearch/technical -size -1k
+```
 ```ruby
 (base) ethanmypan@Ethans-MacBook-Air-4 technical % find /Users/ethanmypan/docsearch/technical -size -1k 
 /Users/ethanmypan/docsearch/technical
@@ -112,7 +125,9 @@ find /Users/ethanmypan/docsearch/technical -size -1k
 ```
 Explanation: find /Users/ethanmypan/docsearch/technical -size -1k, this command searches for files or directories in the path it was provided and filtered by files or directories that are smaller than 1 kilobyte and then it lists their path. This is important since it is a good way to filter out files that are too big, it can help search for files that are a specific size.
 ## find "path" -size with file as argument
+```ruby
 find /Users/ethanmypan/docsearch/technical/plos/pmed.0020226.txt -size -1k
+```
 ```ruby
 (base) ethanmypan@Ethans-MacBook-Air-4 technical % find /Users/ethanmypan/docsearch/technical/plos/pmed.0020226.txt -size -1k
 /Users/ethanmypan/docsearch/technical/plos/pmed.0020226.txt
@@ -120,7 +135,9 @@ find /Users/ethanmypan/docsearch/technical/plos/pmed.0020226.txt -size -1k
 Explanation: find /Users/ethanmypan/docsearch/technical/plos/pmed.0020226.txt -size -1k, this command searches for the file it was provided that is smaller than 1 kilobyte, then it displays the file path of the filtered file. This is important to filter out possible files with the same name but different sizes. 
 # find "path" -delete
 ## find "path" -delete with file as argument
+```ruby
 find /Users/ethanmypan/docsearch/technical/911report -name "chapter-2.txt" -delete
+```
 ```ruby
 (base) ethanmypan@Ethans-MacBook-Air-4 911report % find /Users/ethanmypan/docsearch/technical/911report -name "chapter-2.txt" -delete
 (base) ethanmypan@Ethans-MacBook-Air-4 911report % ls
@@ -132,7 +149,9 @@ chapter-13.2.txt        chapter-5.txt           preface.txt
 ```
 Explanation: find /Users/ethanmypan/docsearch/technical/911report -name "chapter-2.txt" -delete, this command searches for a file from the provided directory and the provided file name, if it finds the file, then it deletes it from the directory. This is important since it is a simple way to delete a file from a directory.
 ## find "path" -delete with directory as argument
+```ruby
 find /Users/ethanmypan/docsearch/technical/911report -delete
+```
 ```ruby
 (base) ethanmypan@Ethans-MacBook-Air-4 911report % find /Users/ethanmypan/docsearch/technical/911report -delete
 (base) ethanmypan@Ethans-MacBook-Air-4 technical % ls
@@ -141,15 +160,19 @@ biomed          government      plos
 Explanation: find /Users/ethanmypan/docsearch/technical/911report -delete, this command searches for the provided directory and if found it will delete the directory. This is important since it is a simple and fast way to delete a directory. 
 # find "path" -name
 ## find "path" -name with directory as argument
-find /Users/ethanmypan/docsearch/technical -type d -name "government"
 ```ruby
-(base) ethanmypan@Ethans-MacBook-Air-4 technical % find /Users/ethanmypan/docsearch/technical -type d -name "government"
+find /Users/ethanmypan/docsearch/technical -name "government"
+```
+```ruby
+(base) ethanmypan@Ethans-MacBook-Air-4 technical % find /Users/ethanmypan/docsearch/technical -name "government"
 /Users/ethanmypan/docsearch/technical/government
 ```
 Explanation: find /Users/ethanmypan/docsearch/technical -type d -name "government",
 this command searches through the file path and then uses the -name "government" to find the government directory. It then returns the directory path if it is found. This is important to see if a directory exists and to get its path.
 ## find "path" -name with file as argument
+```ruby
 find /Users/ethanmypan/docsearch/technical/biomed -name "1471-2431-3-6.txt"
+```
 ```ruby
 (base) ethanmypan@Ethans-MacBook-Air-4 biomed % find /Users/ethanmypan/docsearch/technical/biomed -name "1471-2431-3-6.txt"
 /Users/ethanmypan/docsearch/technical/biomed/1471-2431-3-6.txt
