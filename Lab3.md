@@ -72,7 +72,7 @@ The fix addresses the issue of poorly reversing the order of the array. In the o
 
 # Part 2
 ## Find command-line options
-To understand what the find command-line options are/do I used the man find command in the terminal. I also asked chat gpt how to use the find -"command" in the terminal.
+To understand what the find command-line options are/do I used the man find command in the terminal. I also asked chat gpt how to use the find - "command" (I filled in "command" with the command I was learning) in the terminal.
 
 
 # find "path" -ls 
