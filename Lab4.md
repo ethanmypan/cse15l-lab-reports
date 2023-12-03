@@ -45,7 +45,7 @@ Explanation:
 
 Keys pressed:
 ```ruby
-I typed vim ListExamples.java <enter>, then once the file opened in vim I pressed 44 
+I typed vim ListExamples.java <enter> in the terminal, then once the file opened in vim I pressed 44 + <shift>g, then I pressed control+a, and after that, I pressed <esc> then typed :wq.
 ```
 
 
