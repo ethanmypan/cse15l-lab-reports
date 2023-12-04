@@ -78,7 +78,7 @@ Steps:
 I typed vim ListExamples.java<enter> in the terminal,
 then once the file opened in vim I pressed 44 +<shift+g> = G,
 then I pressed <control+a>, and after that,
-I pressed <esc> then typed <shift+;> = : then wq.
+I pressed <esc> then typed <shift+;> = : then wq<enter>.
 ```
 Command:
 ```ruby
