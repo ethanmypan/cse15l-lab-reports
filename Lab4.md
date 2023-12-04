@@ -1,6 +1,6 @@
 # Disclaimer 
 I completed this lab report assuming I didn't have to say that I typed spaces, and '+' is used to symbolize using a combination of key presses. I also explained the keys I pressed. I also asked and I was told that I do not need to explicitly type <shift> + "letter" to signify that I capitalized the letter.
-## Step 1
+## Step 4:
 Keys pressed:
 ```ruby
 ssh <command+v>
@@ -19,7 +19,7 @@ Explanation:
 For this step, I SSH'd into my virtual machine using the ssh cs15lfa23op@ieng6.ucsd.edu command.
 When you use this command you log into your virtual machine.
 
-## Step 2
+## Step 5:
 
 Keys pressed:
 ```ruby
@@ -41,7 +41,7 @@ Output:
 Explanation:
 For this step, git clone git@github.com:ethanmypan/lab7.git clones the forked repository onto my computer so I can access the files.
 
-## Step 3
+## Step 6:
 
 Keys pressed:
 ```ruby
@@ -63,7 +63,7 @@ Output:
 Explanation:
 For this step, I use cd lab7 to change the directory to lab7, then I use bash test.sh which is a bash script to test the ListExamples.java file.
 
-## Step 4: 
+## Step 7: 
 
 Keys pressed:
 ```ruby
@@ -97,7 +97,7 @@ Explanation:
 vim ListExamples.java opens the java file in vim so you can edit the file, then typing 44G will bring you to the 44th line, then I press control+a which increments the next closest number by 1 making the 1 into a 2, then I press <esc> so I leave the editing mode and the press:wq to save an close the file.
 
 
-## Step 5:
+## Step 8:
 
 Keys pressed:
 ```ruby
@@ -119,7 +119,7 @@ Output:
 Explanation:
 bash test.sh runs the test bash script that contains the code to run the JUnit tests.
 
-## Step 6:
+## Step 9:
 
 Keys pressed:
 ```ruby
