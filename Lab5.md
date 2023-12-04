@@ -35,7 +35,7 @@ Thank you so much for the help. I was able to fix my problem, I made list1.get(i
 
 ## A description of what to edit to fix the bug
 
-``` All you have to do to fix the bug is change the .equals to .compareTo and then you have to make it < 0 inside the if statement. Go from this list1.get(index1).equals(list2.get(index2)) to list1.get(index1).compareTo(list2.get(index2))< 0
-```
+All you have to do to fix the bug is change the .equals to .compareTo and then you have to make it < 0 inside the if statement. Go from this list1.get(index1).equals(list2.get(index2)) to list1.get(index1).compareTo(list2.get(index2))< 0
+
 ## Reflection
 I think the most interesting thing I learned from the second half of the quarter was using vim. I think vim is super useful and has multiple applications. Something I found interesting about vim is how many commands there are and how optimized you can make your experience if you learn the commands.
