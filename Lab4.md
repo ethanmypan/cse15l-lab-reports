@@ -16,7 +16,8 @@ When you use this command you log into your virtual machine.
 
 Keys pressed:
 ```ruby
-I typed git clone <command+v> <enter>. I had "git@github.com:ethanmypan/lab7.git" copied on my computer for this command.
+I typed git clone <command+v> <enter>.
+I had "git@github.com:ethanmypan/lab7.git" copied on my computer for this command.
 ```
 Command: 
 ```ruby
@@ -47,7 +48,10 @@ Explanation:
 
 Keys pressed:
 ```ruby
-I typed vim ListExamples.java <enter> in the terminal, then once the file opened in vim I pressed 44 + <shift> + g, then I pressed control+a, and after that, I pressed <esc> then typed <shift> + ; then wq.
+I typed vim ListExamples.java <enter> in the terminal,
+then once the file opened in vim I pressed 44 + <shift> + g,
+then I pressed control+a, and after that,
+I pressed <esc> then typed <shift> + ; then wq.
 ```
 Command:
 ```ruby
@@ -87,7 +91,10 @@ bash test.sh runs the test bash script that contains the code to run the JUnit t
 
 Keys pressed:
 ```ruby
-I typed git add . <enter> into the terminal, then I pressed git commit -m <shift> + ' then typed fin then closed off the quotations with <shift> + ' <enter>, then I typed git push <enter>.
+I typed git add . <enter> into the terminal,
+then I pressed git commit -m <shift>+' then
+typed fin then closed off the quotations with <shift>+'
+<enter>, then I typed git push <enter>.
 ```
 
 Command:
