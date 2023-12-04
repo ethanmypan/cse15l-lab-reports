@@ -1,5 +1,5 @@
 # Disclaimer 
-I completed this lab report assuming I didn't have to say that I typed spaces, and '+' is used to symbolize using a combination of key presses. I also explained the keys I pressed.
+I completed this lab report assuming I didn't have to say that I typed spaces, and '+' is used to symbolize using a combination of key presses. I also explained the keys I pressed. I also asked and I was told that I do not need to explicitly type <shift> + "letter" to signify that I capitalized the letter.
 ## Step 1
 Keys pressed:
 ```ruby
