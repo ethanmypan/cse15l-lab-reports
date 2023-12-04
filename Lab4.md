@@ -23,11 +23,11 @@ When you use this command you log into your virtual machine.
 
 Keys pressed:
 ```ruby
-git clone <command+v> <enter>
+git clone <command+v><enter>
 ```
 Steps:
 ```ruby
-I typed git clone <command+v> <enter>.
+I typed git clone <command+v><enter>.
 I had "git@github.com:ethanmypan/lab7.git" copied on my computer for this command.
 ```
 Command: 
@@ -45,12 +45,12 @@ For this step, git clone git@github.com:ethanmypan/lab7.git clones the forked re
 
 Keys pressed:
 ```ruby
-cd lab7 <enter>,
-bash test.sh <enter>
+cd lab7<enter>,
+bash test.sh<enter>
 ```
 Steps:
 ```ruby
-I typed cd lab7 <enter>, then I typed bash test.sh <enter>. 
+I typed cd lab7<enter>, then I typed bash test.sh<enter>. 
 ```
 Command:
 ```ruby
@@ -67,16 +67,16 @@ For this step, I use cd lab7 to change the directory to lab7, then I use bash te
 
 Keys pressed:
 ```ruby
-vim ListExamples.java <enter>,
+vim ListExamples.java<enter>,
 44 + G,
 control + a,
 <esc>,
-:wq
+:wq<enter>
 ```
 Steps:
 ```ruby
-I typed vim ListExamples.java <enter> in the terminal,
-then once the file opened in vim I pressed 44 + <shift+g> = G,
+I typed vim ListExamples.java<enter> in the terminal,
+then once the file opened in vim I pressed 44 +<shift+g> = G,
 then I pressed <control+a>, and after that,
 I pressed <esc> then typed <shift+;> = : then wq.
 ```
@@ -101,11 +101,11 @@ vim ListExamples.java opens the java file in vim so you can edit the file, then 
 
 Keys pressed:
 ```ruby
-bash test.sh <enter>
+bash test.sh<enter>
 ```
 Steps:
 ```ruby
-I typed bash test.sh <enter> in the terminal.
+I typed bash test.sh<enter> in the terminal.
 ```
 Command:
 ```ruby
@@ -123,9 +123,9 @@ bash test.sh runs the test bash script that contains the code to run the JUnit t
 
 Keys pressed:
 ```ruby
-git add . <enter>,
-git commit -m "fin" <enter>,
-git push <enter>
+git add .<enter>,
+git commit -m "fin"<enter>,
+git push<enter>
 ```
 Steps:
 ```ruby
@@ -134,7 +134,7 @@ then I pressed git commit -m <shift+'> = ",
 then I typed fin,
 then I closed off the quotations with <shift+'> = ",
 then I pressed <enter>,
-then I typed git push <enter>.
+then I typed git push<enter>.
 ```
 
 Command:
