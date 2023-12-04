@@ -18,8 +18,10 @@ Thank you for the advice! I was able to find a different way to compare the inde
 I believe the issue might be related to ```list1.get(index1).compareTo(list2.get(index2))``` returning an integer, when if statments need booleans as their conditions.
 
 ## Students Response
-Thank you so much for the help. I was able to fix my problem, I made ```list1.get(index1).compareTo(list2.get(index2)) < 0``` be the condition for the if statement. The bug seemed to be that the if statement wasn't handling common elements correctly since it passed the first test but not the second. Using ```compareTo < 0```allows you to see if the elements are equal and if they are smaller or bigger than the value being compared to.
+Thank you so much for the help. I was able to fix my problem, I made ```list1.get(index1).compareTo(list2.get(index2)) < 0``` be the condition for the if statement. The bug seemed to be that the if statement wasn't handling common elements correctly since it passed the first test but not the second. Using ```compareTo < 0```allows you to see if the elements are equal and if they are smaller or bigger than the value being compared to. I also attached my finished code and proof my junit is now passing. Thanks for the help.
 
+![Image](junitPassingLab7.png)
+![Image](finishedCodelab7.png)
 # Part 4 of Part 1
 # file & directory structure needed
 
