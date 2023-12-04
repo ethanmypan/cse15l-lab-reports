@@ -150,12 +150,3 @@ Output:
 
 Explanation: 
 ```git add .```adds ListExamples.java to the git staging area, then ```git commit``` records the edits to git, then ```git push``` publishes the edits to your repository.
-
-
-Commands Temp Save 
-
-```ruby
-
-```
-![Image](vimListEx.png)
-Keys pressed: <up><up><up><up><enter>, <up><up><up><up><enter> The javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java command was 4 up in the search history, so I used up arrow to access it. Then the java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ... command was 4 up in the history, so I accessed and ran it in the same way
